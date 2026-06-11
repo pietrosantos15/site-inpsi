@@ -39,24 +39,19 @@
   <body class="bg-paper text-ink antialiased">
     <header class="fixed inset-x-0 top-0 z-50 border-b border-black/10 bg-[#f4eee5]/95 backdrop-blur">
       <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
-        <!-- Ajustado: gap-2 no mobile para economizar espaço e min-w-0 para evitar quebras ruins -->
-        <a href="#home" class="flex items-center gap-2 sm:gap-4 min-w-0" aria-label="INPSI Home">
-          <!-- Ajustado: Tamanho ligeiramente menor no mobile (h-10 w-10 text-xl) e tamanho normal a partir de sm: -->
+        <a href="index.html#home" class="flex items-center gap-2 sm:gap-4 min-w-0" aria-label="INPSI Home">
           <span class="grid h-10 w-10 sm:h-12 sm:w-12 shrink-0 place-items-center rounded border border-[#cbb9b0] bg-white font-serif text-xl sm:text-2xl font-bold text-[#672f3e] shadow-sm">I</span>
           <span class="leading-none min-w-0">
-            <!-- Ajustado: text-xl no mobile e text-2xl em telas maiores -->
             <span class="block font-serif text-xl sm:text-2xl font-bold tracking-wide text-[#22201d]">INPSI</span>
-            <!-- Ajustado: text-[9px] no mobile para não estourar o espaço da lateral -->
             <span class="block text-[9px] sm:text-[11px] uppercase tracking-[.20em] sm:tracking-[.28em] text-[#8c7f76] truncate">Psicanálise</span>
           </span>
         </a>
 
         <nav class="hidden items-center gap-3 text-sm font-medium text-[#22201d] md:flex">
-          <a class="hover:text-[#672f3e]" href="#home">Home</a><span class="text-[#8c7f76]">|</span>
-          <a class="hover:text-[#672f3e]" href="#trajetoria">Trajetória</a><span class="text-[#8c7f76]">|</span>
-          <a class="hover:text-[#672f3e]" href="#cursos">Seminários e Cursos</a><span class="text-[#8c7f76]">|</span>
-          <a class="hover:text-[#672f3e]" href="#projetos">Projetos</a><span class="text-[#8c7f76]">|</span>
-          <a class="hover:text-[#672f3e]" href="#transmissao">Transmissão da Psicanálise</a>
+          <a class="hover:text-[#672f3e]" href="index.html">Home</a><span class="text-[#8c7f76]">|</span>
+          <a class="hover:text-[#672f3e]" href="trajetoria.html">Trajetória</a><span class="text-[#8c7f76]">|</span>
+          <a class="hover:text-[#672f3e]" href="cursos.html">Seminários e Cursos</a><span class="text-[#8c7f76]">|</span>
+          <a class="hover:text-[#672f3e]" href="projetos.html">Projetos e Transmissão</a>
         </nav>
 
         <button id="menuButton" class="rounded border border-black/15 px-3 py-2 text-sm text-[#22201d] md:hidden shrink-0" aria-expanded="false">
@@ -65,27 +60,36 @@
       </div>
 
       <nav id="mobileMenu" class="hidden border-t border-black/10 bg-[#f4eee5] px-4 py-3 text-sm md:hidden">
-        <a class="block py-2" href="#home">Home</a>
-        <a class="block py-2" href="#trajetoria">Trajetória</a>
-        <a class="block py-2" href="#cursos">Seminários e Cursos</a>
-        <a class="block py-2" href="#projetos">Projetos</a>
-        <a class="block py-2" href="#transmissao">Transmissão da Psicanálise</a>
+        <a class="block py-2" href="index.html">Home</a>
+        <a class="block py-2" href="trajetoria.html">Trajetória</a>
+        <a class="block py-2" href="cursos.html">Seminários e Cursos</a>
+        <a class="block py-2" href="projetos.html">Projetos e Transmissão</a>
       </nav>
     </header>
 
     <main id="home">
-      <section class="hero-image min-h-[92vh] bg-cover bg-center pt-24 text-white">
-        <div class="mx-auto flex min-h-[calc(92vh-6rem)] max-w-7xl items-end px-4 pb-10 sm:px-6 lg:px-8 lg:pb-16">
-          <div class="max-w-3xl pb-0">
+      <section class="hero-image md:min-h-[92vh] bg-cover bg-center pt-24 text-white relative">
+        <div class="block md:hidden w-full bg-white pt-6 pb-2 relative z-30">
+          <div class="mx-auto w-44 h-44 overflow-hidden rounded-lg">
+            <img src="capacelular.jpeg" alt="Logo INPSI" class="w-full h-full object-contain" />
+          </div>
+        </div>
 
-            <div class="mt-14 flex flex-wrap gap-3">
-              <a href="#cursos" class="rounded bg-gold px-5 py-3 text-sm font-bold uppercase tracking-wide text-ink hover:bg-bone">Próximos eventos</a>
-              <a href="#contato" class="rounded border border-white/45 px-5 py-3 text-sm font-bold uppercase tracking-wide text-white hover:bg-bone hover:text-ink">Fale conosco</a>
+        <div class="mx-auto flex md:min-h-[calc(92vh-6rem)] max-w-7xl items-start md:items-end px-4 pb-12 sm:px-6 lg:px-8 lg:pb-16 relative z-20">
+          <div class="max-w-3xl w-full">
+            <div class="mt-4 md:mt-14 flex flex-wrap gap-3">
+              <a href="cursos.html" class="rounded bg-gold px-5 py-3 text-sm font-bold uppercase tracking-wide text-ink hover:bg-[#672f3e] hover:text-white text-center w-full sm:w-auto">Próximos eventos</a>
+              <a href="#contato" class="rounded border border-ink/60 md:border-white/45 px-5 py-3 text-sm font-bold uppercase tracking-wide text-ink md:text-white hover:bg-[#22201d] hover:text-white text-center w-full sm:w-auto">Fale conosco</a>
             </div>
 
-            <p class="mt-6 max-w-2xl text-sm leading-6 text-white/85">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+            <div class="block md:hidden mt-6 max-w-2xl text-sm leading-6 text-ink/85 space-y-4">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <p>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -94,7 +98,7 @@
         <div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
           <div class="relative overflow-hidden rounded shadow-soft">
             <div id="carousel" class="flex transition-transform duration-700 ease-out">
-              <a href="#trajetoria" class="banner-inpsi relative flex min-h-[340px] min-w-full items-end bg-cover bg-center p-7 text-white sm:min-h-[430px] sm:p-12">
+              <a href="trajetoria.html" class="banner-inpsi relative flex min-h-[340px] min-w-full items-end bg-cover bg-center p-7 text-white sm:min-h-[430px] sm:p-12">
                 <div class="max-w-2xl">
                   <p class="text-sm font-bold uppercase tracking-[.28em] text-white/75">Banner INPSI</p>
                   <h2 class="mt-3 font-serif text-4xl font-bold text-balance sm:text-6xl">Conheça nossa trajetória</h2>
@@ -103,7 +107,7 @@
                 </div>
               </a>
 
-              <a href="#cursos" class="banner-cursos relative flex min-h-[340px] min-w-full items-end bg-cover bg-center p-7 text-white sm:min-h-[430px] sm:p-12">
+              <a href="cursos.html" class="banner-cursos relative flex min-h-[340px] min-w-full items-end bg-cover bg-center p-7 text-white sm:min-h-[430px] sm:p-12">
                 <div class="max-w-2xl">
                   <p class="text-sm font-bold uppercase tracking-[.28em] text-white/75">Seminários e Cursos</p>
                   <h2 class="mt-3 font-serif text-4xl font-bold text-balance sm:text-6xl">Cursos, seminários e grupos de estudo</h2>
@@ -112,7 +116,7 @@
                 </div>
               </a>
 
-              <a href="#transmissao" class="banner-psicult relative flex min-h-[340px] min-w-full items-end bg-cover bg-center p-7 text-white sm:min-h-[430px] sm:p-12">
+              <a href="projetos.html" class="banner-psicult relative flex min-h-[340px] min-w-full items-end bg-cover bg-center p-7 text-white sm:min-h-[430px] sm:p-12">
                 <div class="max-w-2xl">
                   <p class="text-sm font-bold uppercase tracking-[.28em] text-white/75">PsiCULT</p>
                   <h2 class="mt-3 font-serif text-4xl font-bold text-balance sm:text-6xl">Psicanálise & Cultura</h2>
@@ -136,20 +140,19 @@
 
       <section class="bg-[#f4eee5] py-20">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="grid gap-12 lg:grid-cols-[.9fr_1.1fr] lg:items-start">
-          <div>
-            <p class="text-sm font-bold uppercase tracking-[.28em] text-clay">Estudo e formação</p>
-            <h2 class="mt-4 font-serif text-4xl font-bold text-balance">A importância do estudo da Psicanálise</h2>
+          <div class="grid gap-12 lg:grid-cols-[.9fr_1.1fr] lg:items-start">
+            <div>
+              <p class="text-sm font-bold uppercase tracking-[.28em] text-clay">Estudo e formação</p>
+              <h2 class="mt-4 font-serif text-4xl font-bold text-balance">A importância do estudo da Psicanálise</h2>
+            </div>
+            <div class="space-y-5 text-lg leading-8 text-black">
+              <p>A Psicanálise, fundada por Sigmund Freud, representa uma profunda investigação da mente humana, revelando os processos inconscientes que influenciam pensamentos, sentimentos e comportamentos.</p>
+              <blockquote class="border-l-4 border-gold pl-5 font-serif text-2xl leading-9 text-[#672f3e]">
+                "A psicanálise só pode ser compreendida e praticada através do estudo constante e dedicado dos seus fundamentos teóricos."
+              </blockquote>
+              <p>Esse compromisso com o aprendizado contínuo permite que o psicanalista desenvolva uma escuta apurada e uma interpretação sensível, fundamentais para a efetividade da análise.</p>
+            </div>
           </div>
-
-          <div class="space-y-5 text-lg leading-8 text-black">
-            <p class="text-black">A Psicanálise, fundada por Sigmund Freud, representa uma profunda investigação da mente humana, revelando os processos inconscientes que influenciam pensamentos, sentimentos e comportamentos.</p>
-            <blockquote class="border-l-4 border-gold pl-5 font-serif text-2xl leading-9 text-[#672f3e]">
-              "A psicanálise só pode ser compreendida e praticada através do estudo constante e dedicado dos seus fundamentos teóricos."
-            </blockquote>
-            <p class="text-black">Esse compromisso com o aprendizado contínuo permite que o psicanalista desenvolva uma escuta apurada e uma interpretação sensível, fundamentais para a efetividade da análise.</p>
-          </div>
-        </div>
         </div>
       </section>
 
@@ -160,14 +163,13 @@
               <p class="text-sm font-bold uppercase tracking-[.28em] text-[#a25d42]">Agenda</p>
               <h2 class="mt-3 font-serif text-5xl font-bold leading-none text-black">Próximos eventos</h2>
             </div>
-            <a href="#cursos" class="self-start rounded bg-[#22201d] px-5 py-3 text-sm font-bold uppercase tracking-wide text-white hover:bg-[#672f3e] sm:self-auto">Ver cursos</a>
+            <a href="cursos.html" class="self-start rounded bg-[#22201d] px-5 py-3 text-sm font-bold uppercase tracking-wide text-white hover:bg-[#672f3e] sm:self-auto">Ver tudo</a>
           </div>
 
           <div class="grid gap-6 md:grid-cols-3">
-            <a href="#curso-leonardo" class="group overflow-hidden rounded border border-black/10 bg-[#f7f1e8] shadow-sm">
+            <a href="cursos.html#curso-leonardo" class="group overflow-hidden rounded border border-black/10 bg-[#f7f1e8] shadow-sm">
               <div class="relative overflow-hidden">
-                <img class="h-[240px] w-full object-cover transition group-hover:scale-105" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=80" alt="Grupo de estudos online" />
-                <span class="absolute left-4 top-4 rounded bg-wine px-3 py-2 text-xs font-bold uppercase tracking-wide text-white/95">Post grupo de estudos</span>
+                <img class="h-[240px] w-full object-cover transition group-hover:scale-105" src="evento1.jpeg" alt="Grupo de estudos online" />
               </div>
               <div class="p-6 pb-7">
                 <h3 class="font-serif text-[1.8rem] font-bold leading-tight text-black">Grupo de Estudos da Teoria Freudiana</h3>
@@ -175,10 +177,10 @@
               </div>
             </a>
 
-            <a href="#curso-daniel" class="group overflow-hidden rounded border border-black/10 bg-[#f7f1e8] shadow-sm">
+            <a href="cursos.html#curso-daniel" class="group overflow-hidden rounded border border-black/10 bg-[#f7f1e8] shadow-sm">
               <div class="relative overflow-hidden">
-                <img class="h-[240px] w-full object-cover transition group-hover:scale-105" src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=900&q=80" alt="Seminário teórico-clínico" />
-                <span class="absolute left-4 top-4 rounded bg-wine px-3 py-2 text-xs font-bold uppercase tracking-wide text-white/95">Post seminário Daniel</span>
+                <img class="h-[240px] w-full object-cover transition group-hover:scale-105" src="evento2.jpeg" alt="Seminário teórico-clínico" />
+                
               </div>
               <div class="p-6 pb-7">
                 <h3 class="font-serif text-[1.8rem] font-bold leading-tight text-black">Seminário Teórico-Clínico</h3>
@@ -186,7 +188,7 @@
               </div>
             </a>
 
-            <a href="#curso-casal" class="group overflow-hidden rounded border border-black/10 bg-[#f7f1e8] shadow-sm">
+            <a href="cursos.html#curso-casal" class="group overflow-hidden rounded border border-black/10 bg-[#f7f1e8] shadow-sm">
               <div class="relative overflow-hidden">
                 <img class="h-[240px] w-full object-cover transition group-hover:scale-105" src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=900&q=80" alt="Casal em conversa" />
                 <span class="absolute left-4 top-4 rounded bg-wine px-3 py-2 text-xs font-bold uppercase tracking-wide text-white/95">Foto de casal provisória</span>
@@ -200,145 +202,34 @@
         </div>
       </section>
 
-      <section class="bg-[#f4eee5] pt-10 pb-20">
+      <section class="bg-[#f4eee5] pt-16 pb-24">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <p class="text-center text-sm font-bold uppercase tracking-[.45em] text-[#a25d42]">Teóricos fundamentais</p>
+          <p class="text-center text-sm font-bold uppercase tracking-[.45em] text-[#a25d42]">Teóricos fundamentais</p>
 
-        <div class="mt-12 grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-5">
-          <figure class="text-center">
-            <img class="mx-auto h-28 w-28 rounded-full object-cover grayscale" src="https://upload.wikimedia.org/wikipedia/commons/3/36/Sigmund_Freud%2C_by_Max_Halberstadt_%28cropped%29.jpg" alt="Sigmund Freud" />
-            <figcaption class="mt-4 font-serif text-lg text-black">Freud</figcaption>
-          </figure>
-          <figure class="text-center">
-            <img class="mx-auto h-28 w-28 rounded-full object-cover grayscale" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80" alt="Melanie Klein" />
-            <figcaption class="mt-4 font-serif text-lg text-black">Klein</figcaption>
-          </figure>
-          <figure class="text-center">
-            <img class="mx-auto h-28 w-28 rounded-full object-cover grayscale" src="https://images.unsplash.com/photo-1566753323558-f4e0952af115?auto=format&fit=crop&w=400&q=80" alt="Donald Winnicott" />
-            <figcaption class="mt-4 font-serif text-lg text-black">Winnicott</figcaption>
-          </figure>
-          <figure class="text-center">
-            <img class="mx-auto h-28 w-28 rounded-full object-cover grayscale" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80" alt="Wilfred Bion" />
-            <figcaption class="mt-4 font-serif text-lg text-black">Bion</figcaption>
-          </figure>
-          <figure class="text-center">
-            <img class="mx-auto h-28 w-28 rounded-full object-cover grayscale" src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?auto=format&fit=crop&w=400&q=80" alt="Jacques Lacan" />
-            <figcaption class="mt-4 font-serif text-lg text-black">Lacan</figcaption>
-          </figure>
-        </div>
-        </div>
-      </section>
-      <section id="cursos" class="bg-bone py-20">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <p class="text-sm font-bold uppercase tracking-[.28em] text-clay">Seminários e Cursos</p>
-        <h2 class="mt-3 font-serif text-4xl font-bold">Programação</h2>
-
-        <div class="mt-10 space-y-10">
-          <article id="curso-leonardo" class="grid gap-8 border-t border-black/10 pt-10 lg:grid-cols-[340px_1fr]">
-            <div class="relative overflow-hidden rounded">
-              <img class="h-80 w-full object-cover" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=900&q=80" alt="Professor Leonardo Ferreira de Azevedo e Silva" />
-              <span class="absolute bottom-4 left-4 rounded bg-bone/95 px-3 py-2 text-xs font-bold uppercase tracking-wide text-wine">Trocar pela foto do Prof. Leonardo</span>
-            </div>
-
-            <div class="text-ink/78">
-              <h3 class="font-serif text-2xl font-bold">Grupo de Estudos da Teoria Freudiana</h3>
-              <p class="mt-4 leading-7">O INPSI está em parceria com a Sociedade Psicanalítica de Angra dos Reis (RJ), através do Prof. Dr. Leonardo Ferreira de Azevedo e Silva, psiquiatra e psicanalista há mais de 40 anos.</p>
-              <p class="mt-4 leading-7">Os encontros são gratuitos, mensais, online e abertos para profissionais, estudantes psis e interessados na transmissão do conhecimento psicanalítico.</p>
-
-              <ul class="mt-5 grid gap-2 text-sm sm:grid-cols-2">
-                <li><strong>17.06</strong> - Cinema & Psicanálise</li>
-                <li><strong>01.07</strong> - História do Movimento Psicanalítico</li>
-                <li><strong>05.08</strong> - Três ensaios para uma teoria da sexualidade</li>
-                <li><strong>02.09</strong> - Para além do princípio do prazer</li>
-                <li><strong>07.10</strong> - O Ego e o Id</li>
-              </ul>
-
-              <div class="mt-6 flex flex-wrap gap-3">
-                <a class="rounded bg-green-600 px-5 py-3 text-sm font-bold uppercase tracking-wide text-white hover:bg-green-700" href="https://wa.me/5515999999999" target="_blank" rel="noreferrer">Inscreva-se pelo WhatsApp</a>
-                <a class="rounded border border-black/15 px-5 py-3 text-sm font-bold uppercase tracking-wide hover:bg-paper" href="https://doutorleonardoazevedo.com/" target="_blank" rel="noreferrer">Site com livros</a>
-              </div>
-            </div>
-          </article>
-
-          <article id="curso-daniel" class="grid gap-8 border-t border-black/10 pt-10 lg:grid-cols-[340px_1fr]">
-            <div class="relative overflow-hidden rounded">
-              <img class="h-80 w-full object-cover" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80" alt="Daniel Hamer Hoizman" />
-              <span class="absolute bottom-4 left-4 rounded bg-bone/95 px-3 py-2 text-xs font-bold uppercase tracking-wide text-wine">Trocar pela foto do Daniel</span>
-            </div>
-
-            <div class="text-ink/78">
-              <h3 class="font-serif text-3xl font-bold text-ink">Quando a clínica desafia a razão</h3>
-              <p class="mt-4 leading-7">Seminário Teórico-Clínico com Daniel Hamer Hoizman sobre espiritualidade, experiências anômalas e atuação psicanalítica contemporânea.</p>
-              <p class="mt-4 leading-7">Dia 27 de junho, das 14h às 16h, pela plataforma online. Serão apresentados recortes clínicos, experiências de atendimento e um olhar ampliado para a escuta em Psicanálise.</p>
-              <p class="mt-4 leading-7">Daniel é psicólogo, mestre em Psicologia Social pela PUC-SP, membro da IARPP, mantenedor do canal Gaiata Psi e autor de livros pela Editora Zagodoni.</p>
-              <p class="mt-4 font-bold text-wine">Será entregue certificado aos participantes.</p>
-              <a class="mt-6 inline-block rounded bg-green-600 px-5 py-3 text-sm font-bold uppercase tracking-wide text-white hover:bg-green-700" href="https://wa.me/5515999999999" target="_blank" rel="noreferrer">Mais informações pelo WhatsApp</a>
-            </div>
-          </article>
-
-          <article id="curso-casal" class="grid gap-8 border-t border-black/10 pt-10 lg:grid-cols-[340px_1fr]">
-            <div class="relative overflow-hidden rounded">
-              <img class="h-80 w-full object-cover" src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=80" alt="Curso de clínica de casal" />
-              <span class="absolute bottom-4 left-4 rounded bg-bone/95 px-3 py-2 text-xs font-bold uppercase tracking-wide text-wine">Trocar pela foto da Albangela</span>
-            </div>
-
-            <div class="text-ink/78">
-              <h3 class="font-serif text-3xl font-bold text-ink">Clínica de Casal: teoria, manejo e atualidades</h3>
-              <p class="mt-4 leading-7">Com as demandas do mundo moderno sobre os papéis do masculino e feminino, a compreensão da dinâmica contemporânea do casal precisa ser repensada e atualizada.</p>
-              <p class="mt-4 leading-7">Ministradora: psicanalista Albangela Ceschin Machado, terapeuta de casal e família pela UNIFESP, especialista em Sexualidade Humana pela FMUSP.</p>
-              <p class="mt-4 leading-7">Aulas online em julho, às quartas-feiras: dias 08, 15, 22 e 29, das 19h30 às 21h30. 08 horas/aula com certificado.</p>
-              <a class="mt-6 inline-block rounded bg-green-600 px-5 py-3 text-sm font-bold uppercase tracking-wide text-white hover:bg-green-700" href="https://wa.me/5515999999999" target="_blank" rel="noreferrer">Mais informações pelo WhatsApp</a>
-            </div>
-          </article>
-        </div>
-      </div>
-      </section>
-
-      <section id="trajetoria" class="bg-[#f4eee5] py-20">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="grid gap-12 lg:grid-cols-[.95fr_1.05fr] lg:items-start">
-          <div class="max-w-xl pt-8 lg:pt-16">
-            <p class="text-sm font-bold uppercase tracking-[.28em] text-clay">Trajetória</p>
-            <h2 class="mt-4 font-serif text-5xl font-bold text-ink">O INPSI desde 2013</h2>
-
-            <div class="mt-8 space-y-6 text-lg leading-8 text-ink/90">
-              <p>O INPSI foi criado para oferecer curso de formação de psicanalistas seguindo o tripé preconizado por Freud: teoria, análise pessoal e supervisão.</p>
-              <p>A grade de estudo contempla Freud, Melanie Klein, Donald Winnicott, Wilfred Bion, Jacques Lacan, Françoise Dolto e teóricos contemporâneos, como André Green.</p>
-              <p>Ao longo desses anos, formou 120 alunos, entre psicólogos, enfermeiros, professores, advogados, jornalistas, publicitários, médicos e outros profissionais.</p>
-              <p>Também realizou jornadas e simpósios com temas relevantes, trabalhos de pesquisa de alunos e profissionais convidados, consolidando sua credibilidade e compromisso com a Psicanálise.</p>
-            </div>
-          </div>
-
-          <div class="grid gap-6 pt-2 lg:grid-cols-[.95fr_1.05fr] lg:gap-5">
-            <img class="h-52 w-full rounded object-cover shadow-sm lg:h-56" src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=800&q=80" alt="Interior do INPSI" />
-            <img class="h-52 w-full rounded object-cover shadow-sm lg:h-56" src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=80" alt="Sala de estudos" />
-            <img class="col-span-2 h-72 w-full rounded object-cover shadow-sm lg:h-80" src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=80" alt="Encontro de formação" />
+          <div class="mt-12 grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-5">
+            <figure class="text-center">
+              <img class="mx-auto h-28 w-28 rounded-full object-cover grayscale" src="https://upload.wikimedia.org/wikipedia/commons/3/36/Sigmund_Freud%2C_by_Max_Halberstadt_%28cropped%29.jpg" alt="Sigmund Freud" />
+              <figcaption class="mt-4 font-serif text-lg text-black">Freud</figcaption>
+            </figure>
+            <figure class="text-center">
+              <img class="mx-auto h-28 w-28 rounded-full object-cover grayscale" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80" alt="Melanie Klein" />
+              <figcaption class="mt-4 font-serif text-lg text-black">Klein</figcaption>
+            </figure>
+            <figure class="text-center">
+              <img class="mx-auto h-28 w-28 rounded-full object-cover grayscale" src="https://images.unsplash.com/photo-1566753323558-f4e0952af115?auto=format&fit=crop&w=400&q=80" alt="Donald Winnicott" />
+              <figcaption class="mt-4 font-serif text-lg text-black">Winnicott</figcaption>
+            </figure>
+            <figure class="text-center">
+              <img class="mx-auto h-28 w-28 rounded-full object-cover grayscale" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80" alt="Wilfred Bion" />
+              <figcaption class="mt-4 font-serif text-lg text-black">Bion</figcaption>
+            </figure>
+            <figure class="text-center">
+              <img class="mx-auto h-28 w-28 rounded-full object-cover grayscale" src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?auto=format&fit=crop&w=400&q=80" alt="Jacques Lacan" />
+              <figcaption class="mt-4 font-serif text-lg text-black">Lacan</figcaption>
+            </figure>
           </div>
         </div>
-      </div>
       </section>
-
-      <section id="projetos" class="bg-white py-20">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <p class="text-sm font-bold uppercase tracking-[.28em] text-clay">Projetos</p>
-        <h2 class="mt-3 font-serif text-4xl font-bold">Saiba mais</h2>
-
-        <div class="mt-10 grid gap-8 lg:grid-cols-2">
-          <article id="transmissao" class="rounded border border-black/10 bg-[#f7f1e8] p-7">
-            <h3 class="font-serif text-3xl font-bold">Psicanálise & Cultura</h3>
-            <p class="mt-4 leading-7 text-ink/78">O PsiCULT surgiu da ideia de transmitir o conhecimento da Psicanálise ao público leigo, em diálogo com profissionais de outras áreas. Iniciado em 2014 no Café Com Gato, passou pelo SESC Sorocaba, pela Oficina Cultural Grande Otelo e migrou para o online durante a pandemia.</p>
-            <p class="mt-4 leading-7 text-ink/78">Também realizou eventos para celebrar o aniversário de Sigmund Freud e debates com convidados de âmbito nacional, como Maria Lucia Homem e Alfredo Simonetti.</p>
-          </article>
-
-          <article class="rounded border border-black/10 bg-[#f7f1e8] p-7">
-            <h3 class="font-serif text-3xl font-bold">Projeto Ponte</h3>
-            <p class="mt-4 leading-7 text-ink/78">Em 2016 nasceu o Projeto Ponte, com psicanalistas voluntários, para "cuidar de quem cuida": oferecer apoio e conhecimento gratuitamente a pessoas que trabalham em entidades assistenciais.</p>
-            <p class="mt-4 leading-7 text-ink/78">A professora Regina Medeiros coordenou as equipes durante todo o trabalho, que levou palestras a voluntários e mães de crianças em creche.</p>
-          </article>
-        </div>
-      </div>
-      </section>
-
     </main>
 
     <footer id="contato" class="bg-ink text-white" style="background:#22201d !important;color:#fff !important;">

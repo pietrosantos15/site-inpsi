@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Nossa Trajetória | INPSI</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind = window.tailwind || {};
+            tailwind.config = { theme: { extend: { colors: { ink: "#22201d", paper: "#f1eee8", bone: "#faf7f1", clay: "#a25d42" }, fontFamily: { sans: ["Inter", "sans-serif"], serif: ["Georgia", "serif"] } } } };
+        </script>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+    </head>
+  <body class="bg-paper text-ink antialiased pt-20">
+    <header class="fixed inset-x-0 top-0 z-50 border-b border-black/10 bg-[#f4eee5]/95 backdrop-blur">
+      <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+        <a href="index.html#home" class="flex items-center gap-4">
+          <span class="grid h-12 w-12 place-items-center rounded border border-[#cbb9b0] bg-white font-serif text-2xl font-bold text-[#672f3e]">I</span>
+          <span><span class="block font-serif text-2xl font-bold">INPSI</span></span>
+        </a>
+        <nav class="hidden items-center gap-3 text-sm font-medium text-[#22201d] md:flex">
+          <a class="hover:text-[#672f3e]" href="index.html">Home</a><span>|</span>
+          <a class="hover:text-[#672f3e]" href="trajetoria.html">Trajetória</a><span>|</span>
+          <a class="hover:text-[#672f3e]" href="cursos.html">Seminários e Cursos</a><span>|</span>
+          <a class="hover:text-[#672f3e]" href="projetos.html">Projetos e Transmissão</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="bg-[#f4eee5] py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-12 lg:grid-cols-[.95fr_1.05fr] lg:items-start">
+          <div>
+            <p class="text-sm font-bold uppercase tracking-[.28em] text-clay">Trajetória</p>
+            <h1 class="mt-4 font-serif text-5xl font-bold">O INPSI desde 2013</h1>
+            <div class="mt-8 space-y-6 text-lg leading-8">
+              <p>O INPSI – Instituto Nacional de Psicanálise foi criado em 2013 para oferecer curso para formação de psicanalistas seguindo o tripé preconizado por Freud: teoria, análise pessoal e supervisão, recebendo alunos com graduação e estudando os teóricos fundamentais das Escolas Inglesa e Francesa.  .</p>
+              <p>A grade de estudo continha a base teórica e clínica de Sigmund Freud e os principais conceitos de Melanie Klein, Donald Winnicott, Wilfred Bion, Jacques Lacan e Francoise Dolto, além de teóricos contemporâneos, como André Green.</p>
+              <p>Formamos ao longo desses anos 120 alunos, entre eles psicólogos, enfermeiros, professores, advogados, jornalistas, publicitários, médicos, entre outros. 
+              O corpo docente formado por profissionais atuantes, com especialização e mestrado, em constante estudo e clínica, trazendo a experiência do conhecimento e prática</p>
+              <p>Desenvolvemos projetos com o objetivo de levar a Psicanálise a todos os interessados, como o PsiCULT  e Projeto Ponte voltados para o público leigo e entidades sociais. Homenageamos profissionais de destaque em âmbito local, regional e nacional.</p>
+              <p>Realizamos Jornadas e Simpósios com temas relevantes, apresentando trabalhos de pesquisa de alunos e profissionais convidados. Consolidando ainda mais o INPSI com referências a Psicanálise, na sua credibilidade e compromisso com a Psicanálise séria e pura. Atualmente, estamos em um novo espaçoe</p>
+            </div>
+          </div>
+          <div class="grid gap-6 lg:grid-cols-2">
+            <img class="h-52 w-full rounded object-cover" src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=800&q=80" alt="Interior" />
+            <img class="h-52 w-full rounded object-cover" src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=80" alt="Sala" />
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
