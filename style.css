@@ -1,0 +1,27 @@
+.hero-image {
+  background-image:
+    linear-gradient(90deg, rgba(34, 32, 29, .78), rgba(34, 32, 29, .42), rgba(34, 32, 29, .16)),
+    url("inpsicapa.jpeg");
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.banner-inpsi {
+  background-image:
+    linear-gradient(90deg, rgba(34, 32, 29, .82), rgba(34, 32, 29, .42), rgba(34, 32, 29, .12)),
+    url("https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1600&q=85");
+}
+
+.banner-cursos {
+  background-image:
+    linear-gradient(90deg, rgba(34, 32, 29, .82), rgba(34, 32, 29, .46), rgba(34, 32, 29, .16)),
+    url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=85");
+}
+
+.banner-psicult {
+  background-image:
+    linear-gradient(90deg, rgba(34, 32, 29, .82), rgba(34, 32, 29, .46), rgba(34, 32, 29, .16)),
+    url("https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=1600&q=85");
+}
