@@ -71,7 +71,7 @@
       <section class="hero-image md:min-h-[92vh] bg-cover bg-center pt-24 text-white relative">
         <div class="block md:hidden w-full bg-white pt-6 pb-2 relative z-30">
           <div class="mx-auto w-44 h-44 overflow-hidden rounded-lg">
-            <img src="capacelular.jpeg" alt="Logo INPSI" class="w-full h-full object-contain" />
+            <img src="assets/capacelular.jpeg" alt="Logo INPSI" class="w-full h-full object-contain" />
           </div>
         </div>
 
@@ -156,6 +156,7 @@
         </div>
       </section>
 
+      <!-- 4. Agenda de Próximos Eventos (Cards Quadrados Preenchidos por Inteiro) -->
       <section class="bg-bone pt-14 pb-24">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div class="mb-8 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
@@ -167,33 +168,38 @@
           </div>
 
           <div class="grid gap-6 md:grid-cols-3">
-            <a href="cursos.html#curso-leonardo" class="group overflow-hidden rounded border border-black/10 bg-[#f7f1e8] shadow-sm">
-              <div class="relative overflow-hidden">
-                <img class="h-[240px] w-full object-cover transition group-hover:scale-105" src="evento1.jpeg" alt="Grupo de estudos online" />
+            <!-- Card 1 -->
+            <a href="cursos.html#curso-leonardo" class="group overflow-hidden rounded border border-black/10 bg-[#f7f1e8] shadow-sm flex flex-col">
+              <!-- Alterado: Substituído h-[240px] por aspect-square para o contêiner virar um quadrado perfeito -->
+              <div class="relative overflow-hidden bg-white aspect-square w-full flex items-center justify-center">
+                <img class="w-full h-full object-cover transition group-hover:scale-102" src="assets/evento1.jpeg" alt="Grupo de estudos online" />
               </div>
-              <div class="p-6 pb-7">
+              <div class="p-6 pb-7 bg-[#f7f1e8] flex-grow">
                 <h3 class="font-serif text-[1.8rem] font-bold leading-tight text-black">Grupo de Estudos da Teoria Freudiana</h3>
                 <p class="mt-3 text-sm text-black/75">Quartas-feiras, 19h00, online.</p>
               </div>
             </a>
 
-            <a href="cursos.html#curso-daniel" class="group overflow-hidden rounded border border-black/10 bg-[#f7f1e8] shadow-sm">
-              <div class="relative overflow-hidden">
-                <img class="h-[240px] w-full object-cover transition group-hover:scale-105" src="evento2.jpeg" alt="Seminário teórico-clínico" />
-                
+            <!-- Card 2 -->
+            <a href="cursos.html#curso-daniel" class="group overflow-hidden rounded border border-black/10 bg-[#f7f1e8] shadow-sm flex flex-col">
+              <!-- Alterado: Substituído h-[240px] por aspect-square para o contêiner virar um quadrado perfeito -->
+              <div class="relative overflow-hidden bg-white aspect-square w-full flex items-center justify-center">
+                <img class="w-full h-full object-cover transition group-hover:scale-102" src="assets/evento2.jpeg" alt="Seminário teórico-clínico" />
               </div>
-              <div class="p-6 pb-7">
+              <div class="p-6 pb-7 bg-[#f7f1e8] flex-grow">
                 <h3 class="font-serif text-[1.8rem] font-bold leading-tight text-black">Seminário Teórico-Clínico</h3>
                 <p class="mt-3 text-sm text-black/75">27 de junho, das 14h às 16h.</p>
               </div>
             </a>
 
-            <a href="cursos.html#curso-casal" class="group overflow-hidden rounded border border-black/10 bg-[#f7f1e8] shadow-sm">
-              <div class="relative overflow-hidden">
-                <img class="h-[240px] w-full object-cover transition group-hover:scale-105" src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=900&q=80" alt="Casal em conversa" />
+            <!-- Card 3 -->
+            <a href="cursos.html#curso-casal" class="group overflow-hidden rounded border border-black/10 bg-[#f7f1e8] shadow-sm flex flex-col">
+              <!-- Alterado: Substituído h-[240px] por aspect-square para o contêiner virar um quadrado perfeito -->
+              <div class="relative overflow-hidden bg-white aspect-square w-full flex items-center justify-center">
+                <img class="w-full h-full object-cover transition group-hover:scale-102" src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=900&q=80" alt="Casal em conversa" />
                 <span class="absolute left-4 top-4 rounded bg-wine px-3 py-2 text-xs font-bold uppercase tracking-wide text-white/95">Foto de casal provisória</span>
               </div>
-              <div class="p-6 pb-7">
+              <div class="p-6 pb-7 bg-[#f7f1e8] flex-grow">
                 <h3 class="font-serif text-[1.8rem] font-bold leading-tight text-black">Clínica de Casal</h3>
                 <p class="mt-3 text-sm text-black/75">Julho, quartas-feiras, 19h30 às 21h30.</p>
               </div>
@@ -212,19 +218,19 @@
               <figcaption class="mt-4 font-serif text-lg text-black">Freud</figcaption>
             </figure>
             <figure class="text-center">
-              <img class="mx-auto h-28 w-28 rounded-full object-cover grayscale" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80" alt="Melanie Klein" />
+              <img class="mx-auto h-28 w-28 rounded-full object-cover grayscale" src="assets/klein.jpeg" alt="Melanie Klein" />
               <figcaption class="mt-4 font-serif text-lg text-black">Klein</figcaption>
             </figure>
             <figure class="text-center">
-              <img class="mx-auto h-28 w-28 rounded-full object-cover grayscale" src="https://images.unsplash.com/photo-1566753323558-f4e0952af115?auto=format&fit=crop&w=400&q=80" alt="Donald Winnicott" />
+              <img class="mx-auto h-28 w-28 rounded-full object-cover grayscale" src="assets/winicot.jpeg" alt="Donald Winnicott" />
               <figcaption class="mt-4 font-serif text-lg text-black">Winnicott</figcaption>
             </figure>
             <figure class="text-center">
-              <img class="mx-auto h-28 w-28 rounded-full object-cover grayscale" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80" alt="Wilfred Bion" />
+              <img class="mx-auto h-28 w-28 rounded-full object-cover grayscale" src="assets/bion.jpeg" alt="Wilfred Bion" />
               <figcaption class="mt-4 font-serif text-lg text-black">Bion</figcaption>
             </figure>
             <figure class="text-center">
-              <img class="mx-auto h-28 w-28 rounded-full object-cover grayscale" src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?auto=format&fit=crop&w=400&q=80" alt="Jacques Lacan" />
+              <img class="mx-auto h-28 w-28 rounded-full object-cover grayscale" src="assets/lacan.jpeg" alt="Jacques Lacan" />
               <figcaption class="mt-4 font-serif text-lg text-black">Lacan</figcaption>
             </figure>
           </div>
@@ -241,15 +247,15 @@
           <p class="text-white/75">Rua Frei Galvão, 368 - Vila Santana - Sorocaba/SP</p>
 
           <div class="mt-6 flex flex-wrap gap-3 text-sm font-bold uppercase tracking-wide">
-            <a class="text-gold hover:text-white" href="#" aria-label="Facebook do INPSI">Facebook</a>
+            <a class="text-gold hover:text-white" href="https://www.facebook.com/Inpsi?locale=pt_BR" aria-label="Facebook do INPSI">Facebook</a>
             <span class="text-white/25">|</span>
-            <a class="text-gold hover:text-white" href="#" aria-label="Instagram do INPSI">Instagram</a>
+            <a class="text-gold hover:text-white" href="https://www.instagram.com/inpsi.sp/" aria-label="Instagram do INPSI">Instagram</a>
           </div>
         </div>
 
         <div class="flex flex-col gap-3 sm:flex-row md:flex-col">
           <a class="rounded bg-gold px-5 py-3 text-center text-sm font-bold uppercase tracking-wide text-ink hover:bg-bone" href="mailto:inpsi.sp@gmail.com">Fale conosco</a>
-          <a class="rounded border border-white/25 px-5 py-3 text-center text-sm font-bold uppercase tracking-wide hover:bg-bone hover:text-ink" href="https://wa.me/5515999999999" target="_blank" rel="noreferrer">WhatsApp</a>
+          <a class="rounded border border-white/25 px-5 py-3 text-center text-sm font-bold uppercase tracking-wide hover:bg-bone hover:text-ink" href="https://wa.me/5515981731787" target="_blank" rel="noreferrer">WhatsApp</a>
         </div>
       </div>
     </footer>

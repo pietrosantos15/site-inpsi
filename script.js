@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", () => {
   const menuButton = document.querySelector("#menuButton");
   const mobileMenu = document.querySelector("#mobileMenu");
@@ -44,5 +43,6 @@ document.addEventListener("DOMContentLoaded", () => {
   prevButton?.addEventListener("click", () => setSlide(slide - 1));
   nextButton?.addEventListener("click", () => setSlide(slide + 1));
 
-  setInterval(() => setSlide(slide + 1), 5200);
+  // CORREÇÃO: A linha "setInterval(() => setSlide(slide + 1), 5200);" foi removida.
+  // Agora o carrossel só mudará quando o usuário clicar nas setas (‹ ou ›) ou nas barras inferiores.
 });

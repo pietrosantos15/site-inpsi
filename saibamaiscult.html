@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="pt-BR" class="scroll-smooth">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>PsiCULT - Psicanálise & Cultura | INPSI</title>
+
+        <script>
+            tailwind = window.tailwind || {};
+            tailwind.config = {
+                theme: {
+                extend: {
+                    colors: {
+                    ink: "#22201d",
+                    paper: "#f1eee8",
+                    bone: "#faf7f1",
+                    clay: "#a25d42",
+                    wine: "#672f3e",
+                    gold: "#c19a4d"
+                    },
+                    fontFamily: {
+                    sans: ["Inter", "sans-serif"],
+                    serif: ["Georgia", "serif"]
+                    }
+                }
+                }
+            };
+        </script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+    </head>
+
+  <body class="bg-paper text-ink antialiased pt-20">
+    <header class="fixed inset-x-0 top-0 z-50 border-b border-black/10 bg-[#f4eee5]/95 backdrop-blur">
+      <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+        <a href="index.html#home" class="flex items-center gap-2 sm:gap-4 min-w-0" aria-label="INPSI Home">
+          <span class="grid h-10 w-10 sm:h-12 sm:w-12 shrink-0 place-items-center rounded border border-[#cbb9b0] bg-white font-serif text-xl sm:text-2xl font-bold text-[#672f3e] shadow-sm">I</span>
+          <span class="leading-none min-w-0">
+            <span class="block font-serif text-xl sm:text-2xl font-bold tracking-wide text-[#22201d]">INPSI</span>
+            <span class="block text-[9px] sm:text-[11px] uppercase tracking-[.20em] sm:tracking-[.28em] text-[#8c7f76] truncate">Psicanálise</span>
+          </span>
+        </a>
+        <nav class="hidden items-center gap-3 text-sm font-medium text-[#22201d] md:flex">
+          <a class="hover:text-[#672f3e]" href="index.html">Home</a><span class="text-[#8c7f76]">|</span>
+          <a class="hover:text-[#672f3e]" href="trajetoria.html">Trajetória</a><span class="text-[#8c7f76]">|</span>
+          <a class="hover:text-[#672f3e]" href="cursos.html">Seminários e Cursos</a><span class="text-[#8c7f76]">|</span>
+          <a class="hover:text-[#672f3e]" href="projetos.html">Projetos e Transmissão</a>
+        </nav>
+        <button id="menuButton" class="rounded border border-black/15 px-3 py-2 text-sm text-[#22201d] md:hidden shrink-0" aria-expanded="false">Menu</button>
+      </div>
+      <nav id="mobileMenu" class="hidden border-t border-black/10 bg-[#f4eee5] px-4 py-3 text-sm md:hidden">
+        <a class="block py-2" href="index.html">Home</a>
+        <a class="block py-2" href="trajetoria.html">Trajetória</a>
+        <a class="block py-2" href="cursos.html">Seminários e Cursos</a>
+        <a class="block py-2" href="projetos.html">Projetos e Transmissão</a>
+      </nav>
+    </header>
+
+    <main class="py-12 md:py-20">
+      <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <a href="projetos.html" class="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-clay hover:text-wine mb-6 transition">
+          ← Voltar para Projetos
+        </a>
+
+        <p class="text-sm font-bold uppercase tracking-[.28em] text-clay">Iniciativa Cultural</p>
+        <h1 class="mt-2 font-serif text-4xl md:text-5xl font-bold leading-tight text-ink">Psicanálise & Cultura (PsiCULT)</h1>
+        
+        <div class="mt-8 overflow-hidden rounded border border-black/10 shadow-sm">
+          <img class="w-full h-[300px] md:h-[450px] object-cover" src="https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=1600&q=85" alt="Evento PsiCULT" />
+        </div>
+
+        <div class="mt-10 space-y-6 text-lg leading-8 text-ink/90 font-sans">
+          <p class="font-semibold text-xl text-wine">
+            O PsiCult surgiu da ideia de transmitir o conhecimento da Psicanálise ao público leito, também em algumas ocasiões convidamos profissionais de outras áreas para discutir um tema em comuma cidade.
+          </p>
+          <p>
+            Iniciou-se em 2014 no Café Com Gato, local conhecido de Sorocaba pelo espaço lúdico com os felinos, fechando uma parceria do espaço. Como o número de público cresceu consideravelmente, tivemos que migrar para um local maior e foi aí que o SESC Sorocaba abraçou edições posteriores em sua praça de alimentação, o que mantinha o formato anterior, de um local descontraído, alimentando o corpo e a mente
+          </p>
+          
+          <blockquote class="border-l-4 border-gold pl-5 font-serif text-xl italic leading-8 text-[#672f3e] my-8">
+            "A psicanálise não deve ficar restrita às sociedades de formação; ela dialoga diretamente com a arte, o cinema, a literatura e o cotidiano da nossa civilização."
+          </blockquote>
+
+          <p>
+            Depois passamos brevemente pela Oficina Cultural Grande Otelo, da Secretaria Estadual da Cultura. Com a pandemia, o PsiCult migrou para o online, com Lives no perfil do Instagram, continuando a levar a transmissão da Psicanálise a todos, desta vez além da geografia local.
+          </p>
+          <p>
+            Tivemos ainda eventos no anfiteatro do SESC Sorocaba para celebrar o aniversário de Sigmund Freud em maio e com temas pontuais para discussão com o público, tendo como convidados psicanalistas de outras localidades e de âmbito nacional, como a psicanalista Maria Lucia Homem e o psicanalista escritor Alfredo Simonetti
+          </p>
+        </div>
+
+        <div class="mt-12 grid gap-6 sm:grid-cols-2">
+          <div class="overflow-hidden rounded border border-black/10">
+            <img class="w-full h-64 object-cover" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80" alt="Debate PsiCULT" />
+            <p class="p-3 text-xs text-center bg-bone text-ink/70 border-t border-black/5">Debates interativos e multidisciplinares com o público.</p>
+          </div>
+          <div class="overflow-hidden rounded border border-black/10">
+            <img class="w-full h-64 object-cover" src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80" alt="Encontro online PsiCULT" />
+            <p class="p-3 text-xs text-center bg-bone text-ink/70 border-t border-black/5">Transmissões e simpósios adaptados ao ambiente virtual.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer id="contato" class="bg-ink text-white" style="background:#22201d !important;color:#fff !important;">
+      <div class="mx-auto grid max-w-7xl gap-8 px-4 py-14 sm:px-6 md:grid-cols-[1fr_auto] lg:px-8">
+        <div>
+          <h2 class="font-serif text-3xl font-bold">INPSI - Instituto Nacional de Psicanálise</h2>
+          <p class="mt-3 text-white/75">Há 13 anos investindo na formação e estudo da Psicanálise.</p>
+          <p class="mt-5 text-white/75">inpsi.sp@gmail.com</p>
+          <div class="mt-6 flex flex-wrap gap-3 text-sm font-bold uppercase tracking-wide">
+            <a class="text-gold hover:text-white" href="#">Facebook</a><span class="text-white/25">|</span>
+            <a class="text-gold hover:text-white" href="#">Instagram</a>
+          </div>
+        </div>
+        <div class="flex flex-col gap-3 sm:flex-row md:flex-col">
+          <a class="rounded bg-gold px-5 py-3 text-center text-sm font-bold uppercase tracking-wide text-ink" href="mailto:inpsi.sp@gmail.com">Fale conosco</a>
+          <a class="rounded border border-white/25 px-5 py-3 text-center text-sm font-bold uppercase tracking-wide" href="https://wa.me/5515999999999" target="_blank">WhatsApp</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
