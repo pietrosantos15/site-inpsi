@@ -39,11 +39,15 @@
   <body class="bg-paper text-ink antialiased">
     <header class="fixed inset-x-0 top-0 z-50 border-b border-black/10 bg-[#f4eee5]/95 backdrop-blur">
       <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
-        <a href="#home" class="flex items-center gap-4" aria-label="INPSI Home">
-          <span class="grid h-12 w-12 place-items-center rounded border border-[#cbb9b0] bg-white font-serif text-2xl font-bold text-[#672f3e] shadow-sm">I</span>
-          <span class="leading-none">
-            <span class="block font-serif text-2xl font-bold tracking-wide text-[#22201d]">INPSI</span>
-            <span class="block text-[11px] uppercase tracking-[.28em] text-[#8c7f76]">Psicanálise</span>
+        <!-- Ajustado: gap-2 no mobile para economizar espaço e min-w-0 para evitar quebras ruins -->
+        <a href="#home" class="flex items-center gap-2 sm:gap-4 min-w-0" aria-label="INPSI Home">
+          <!-- Ajustado: Tamanho ligeiramente menor no mobile (h-10 w-10 text-xl) e tamanho normal a partir de sm: -->
+          <span class="grid h-10 w-10 sm:h-12 sm:w-12 shrink-0 place-items-center rounded border border-[#cbb9b0] bg-white font-serif text-xl sm:text-2xl font-bold text-[#672f3e] shadow-sm">I</span>
+          <span class="leading-none min-w-0">
+            <!-- Ajustado: text-xl no mobile e text-2xl em telas maiores -->
+            <span class="block font-serif text-xl sm:text-2xl font-bold tracking-wide text-[#22201d]">INPSI</span>
+            <!-- Ajustado: text-[9px] no mobile para não estourar o espaço da lateral -->
+            <span class="block text-[9px] sm:text-[11px] uppercase tracking-[.20em] sm:tracking-[.28em] text-[#8c7f76] truncate">Psicanálise</span>
           </span>
         </a>
 
@@ -55,7 +59,7 @@
           <a class="hover:text-[#672f3e]" href="#transmissao">Transmissão da Psicanálise</a>
         </nav>
 
-        <button id="menuButton" class="rounded border border-black/15 px-3 py-2 text-sm text-[#22201d] md:hidden" aria-expanded="false">
+        <button id="menuButton" class="rounded border border-black/15 px-3 py-2 text-sm text-[#22201d] md:hidden shrink-0" aria-expanded="false">
           Menu
         </button>
       </div>
@@ -71,16 +75,17 @@
 
     <main id="home">
       <section class="hero-image min-h-[92vh] bg-cover bg-center pt-24 text-white">
-        <div class="mx-auto flex min-h-[calc(92vh-6rem)] max-w-7xl items-end px-4 pb-28 sm:px-6 lg:px-8 lg:pb-32">
-          <div class="max-w-3xl mt-24 pb-2 sm:pb-4 lg:pb-6">
-            <p class="max-w-2xl text-xl leading-8 text-white/90">
-              Há 13 anos investindo na formação, no estudo rigoroso e na transmissão da Psicanálise.
-            </p>
+        <div class="mx-auto flex min-h-[calc(92vh-6rem)] max-w-7xl items-end px-4 pb-10 sm:px-6 lg:px-8 lg:pb-16">
+          <div class="max-w-3xl pb-0">
 
             <div class="mt-14 flex flex-wrap gap-3">
               <a href="#cursos" class="rounded bg-gold px-5 py-3 text-sm font-bold uppercase tracking-wide text-ink hover:bg-bone">Próximos eventos</a>
               <a href="#contato" class="rounded border border-white/45 px-5 py-3 text-sm font-bold uppercase tracking-wide text-white hover:bg-bone hover:text-ink">Fale conosco</a>
             </div>
+
+            <p class="mt-6 max-w-2xl text-sm leading-6 text-white/85">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
           </div>
         </div>
       </section>
