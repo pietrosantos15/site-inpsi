@@ -37,7 +37,7 @@
     </head>
 
   <body class="bg-paper text-ink antialiased">
-    <header class="fixed inset-x-0 top-0 z-50 border-b border-black/10 bg-[#f4eee5]/95 backdrop-blur">
+    <header class="absolute inset-x-0 top-0 z-50 border-b border-black/10 bg-[#f4eee5]/95 backdrop-blur">
       <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
         <a href="index.html#home" class="flex items-center gap-2 sm:gap-4 min-w-0" aria-label="INPSI Home">
           <span class="grid h-10 w-10 sm:h-12 sm:w-12 shrink-0 place-items-center rounded border border-[#cbb9b0] bg-white font-serif text-xl sm:text-2xl font-bold text-[#672f3e] shadow-sm">I</span>
@@ -47,23 +47,28 @@
           </span>
         </a>
 
+        <!-- Menu Desktop -->
         <nav class="hidden items-center gap-3 text-sm font-medium text-[#22201d] md:flex">
           <a class="hover:text-[#672f3e]" href="index.html">Home</a><span class="text-[#8c7f76]">|</span>
           <a class="hover:text-[#672f3e]" href="trajetoria.html">Trajetória</a><span class="text-[#8c7f76]">|</span>
           <a class="hover:text-[#672f3e]" href="cursos.html">Seminários e Cursos</a><span class="text-[#8c7f76]">|</span>
-          <a class="hover:text-[#672f3e]" href="projetos.html">Projetos e Transmissão</a>
+          <a class="hover:text-[#672f3e]" href="projetos.html">Projetos e Transmissão</a><span class="text-[#8c7f76]">|</span>
+          <a class="hover:text-[#672f3e]" href="eventosrealizados.html">Eventos Realizados</a>
         </nav>
 
-        <button id="menuButton" class="rounded border border-black/15 px-3 py-2 text-sm text-[#22201d] md:hidden shrink-0" aria-expanded="false">
-          Menu
+        <!-- Botão Menu Mobile Identificado com menu-btn igual a Projetos -->
+        <button id="menu-btn" class="block p-2 md:hidden" aria-label="Abrir menu">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
         </button>
       </div>
 
-      <nav id="mobileMenu" class="hidden border-t border-black/10 bg-[#f4eee5] px-4 py-3 text-sm md:hidden">
-        <a class="block py-2" href="index.html">Home</a>
-        <a class="block py-2" href="trajetoria.html">Trajetória</a>
-        <a class="block py-2" href="cursos.html">Seminários e Cursos</a>
-        <a class="block py-2" href="projetos.html">Projetos e Transmissão</a>
+      <!-- Links Mobile (Dropdown) Identificado com mobile-menu igual a Projetos -->
+      <nav id="mobile-menu" class="hidden border-t border-black/10 bg-[#f4eee5] px-4 py-4 flex flex-col gap-3 text-sm font-medium md:hidden">
+        <a class="hover:text-[#672f3e] py-1" href="index.html">Home</a>
+        <a class="hover:text-[#672f3e] py-1" href="trajetoria.html">Trajetória</a>
+        <a class="hover:text-[#672f3e] py-1" href="cursos.html">Seminários e Cursos</a>
+        <a class="hover:text-[#672f3e] py-1" href="projetos.html">Projetos e Transmissão</a>
+        <a class="hover:text-[#672f3e] py-1" href="eventosrealizados.html">Eventos Realizados</a>
       </nav>
     </header>
 
@@ -84,11 +89,10 @@
 
             <div class="block md:hidden mt-6 max-w-2xl text-sm leading-6 text-ink/85 space-y-4">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                O espaço psicanalítico propõe o vínculo verdadeiro e profundo, mas respeitando o tempo do indivíduo de aproximação, sem invadir. 
+                É o lugar do caminho a dois, de descoberta e enfrentamento de si mesmo, podendo rir, chorar, ficar em silêncio, ser quem se é, sem papéis para se proteger ou atender  expectativas
               </p>
-              <p>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
+
             </div>
           </div>
         </div>
@@ -156,7 +160,6 @@
         </div>
       </section>
 
-      <!-- 4. Agenda de Próximos Eventos (Cards Quadrados Preenchidos por Inteiro) -->
       <section class="bg-bone pt-14 pb-24">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div class="mb-8 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
@@ -170,21 +173,19 @@
           <div class="grid gap-6 md:grid-cols-3">
             <!-- Card 1 -->
             <a href="cursos.html#curso-leonardo" class="group overflow-hidden rounded border border-black/10 bg-[#f7f1e8] shadow-sm flex flex-col">
-              <!-- Alterado: Substituído h-[240px] por aspect-square para o contêiner virar um quadrado perfeito -->
               <div class="relative overflow-hidden bg-white aspect-square w-full flex items-center justify-center">
-                <img class="w-full h-full object-cover transition group-hover:scale-102" src="assets/evento1.jpeg" alt="Grupo de estudos online" />
+                <img class="w-full h-full object-cover transition group-hover:scale-102" src="assets/leonardoo.jpeg" alt="Grupo de estudos online" />
               </div>
               <div class="p-6 pb-7 bg-[#f7f1e8] flex-grow">
                 <h3 class="font-serif text-[1.8rem] font-bold leading-tight text-black">Grupo de Estudos da Teoria Freudiana</h3>
-                <p class="mt-3 text-sm text-black/75">Quartas-feiras, 19h00, online.</p>
+                <p class="mt-3 text-sm text-black/75">Quartas-feiras, 20h00, online.</p>
               </div>
             </a>
 
             <!-- Card 2 -->
             <a href="cursos.html#curso-daniel" class="group overflow-hidden rounded border border-black/10 bg-[#f7f1e8] shadow-sm flex flex-col">
-              <!-- Alterado: Substituído h-[240px] por aspect-square para o contêiner virar um quadrado perfeito -->
               <div class="relative overflow-hidden bg-white aspect-square w-full flex items-center justify-center">
-                <img class="w-full h-full object-cover transition group-hover:scale-102" src="assets/evento2.jpeg" alt="Seminário teórico-clínico" />
+                <img class="w-full h-full object-cover transition group-hover:scale-102" src="assets/daniell.jpeg" alt="Seminário teórico-clínico" />
               </div>
               <div class="p-6 pb-7 bg-[#f7f1e8] flex-grow">
                 <h3 class="font-serif text-[1.8rem] font-bold leading-tight text-black">Seminário Teórico-Clínico</h3>
@@ -194,9 +195,8 @@
 
             <!-- Card 3 -->
             <a href="cursos.html#curso-casal" class="group overflow-hidden rounded border border-black/10 bg-[#f7f1e8] shadow-sm flex flex-col">
-              <!-- Alterado: Substituído h-[240px] por aspect-square para o contêiner virar um quadrado perfeito -->
               <div class="relative overflow-hidden bg-white aspect-square w-full flex items-center justify-center">
-                <img class="w-full h-full object-cover transition group-hover:scale-102" src="assets/capa3.jpeg" alt="Casal em conversa" />
+                <img class="w-full h-full object-cover transition group-hover:scale-102" src="assets/albangelaa.jpeg" alt="Casal em conversa" />
               </div>
               <div class="p-6 pb-7 bg-[#f7f1e8] flex-grow">
                 <h3 class="font-serif text-[1.8rem] font-bold leading-tight text-black">Clínica de Casal</h3>
@@ -257,5 +257,14 @@
         </div>
       </div>
     </footer>
+
+    <!-- SCRIPT DO GATILHO DO MENU COPIADO DE PROJETOS -->
+    <script>
+      const btn = document.getElementById('menu-btn');
+      const menu = document.getElementById('mobile-menu');
+      if(btn && menu) {
+        btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+      }
+    </script>
   </body>
 </html>

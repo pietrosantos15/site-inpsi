@@ -32,28 +32,35 @@
     </head>
 
   <body class="bg-paper text-ink antialiased pt-20">
-    <header class="fixed inset-x-0 top-0 z-50 border-b border-black/10 bg-[#f4eee5]/95 backdrop-blur">
+    <header class="absolute inset-x-0 top-0 z-50 border-b border-black/10 bg-[#f4eee5]/95 backdrop-blur">
       <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
-        <a href="index.html#home" class="flex items-center gap-2 sm:gap-4 min-w-0" aria-label="INPSI Home">
-          <span class="grid h-10 w-10 sm:h-12 sm:w-12 shrink-0 place-items-center rounded border border-[#cbb9b0] bg-white font-serif text-xl sm:text-2xl font-bold text-[#672f3e] shadow-sm">I</span>
-          <span class="leading-none min-w-0">
-            <span class="block font-serif text-xl sm:text-2xl font-bold tracking-wide text-[#22201d]">INPSI</span>
-            <span class="block text-[9px] sm:text-[11px] uppercase tracking-[.20em] sm:tracking-[.28em] text-[#8c7f76] truncate">Psicanálise</span>
+        <a href="index.html#home" class="flex items-center gap-4">
+          <span class="grid h-12 w-12 place-items-center rounded border border-[#cbb9b0] bg-white font-serif text-2xl font-bold text-[#672f3e]">I</span>
+          <span>
+            <span class="block font-serif text-2xl font-bold text-[#22201d]">INPSI</span>
+            <span class="block text-[11px] uppercase tracking-[.28em] text-[#8c7f76]">Psicanálise</span>
           </span>
         </a>
+        
         <nav class="hidden items-center gap-3 text-sm font-medium text-[#22201d] md:flex">
-          <a class="hover:text-[#672f3e]" href="index.html">Home</a><span class="text-[#8c7f76]">|</span>
-          <a class="hover:text-[#672f3e]" href="trajetoria.html">Trajetória</a><span class="text-[#8c7f76]">|</span>
-          <a class="hover:text-[#672f3e]" href="cursos.html">Seminários e Cursos</a><span class="text-[#8c7f76]">|</span>
-          <a class="hover:text-[#672f3e]" href="projetos.html">Projetos e Transmissão</a>
+          <a class="hover:text-[#672f3e]" href="index.html">Home</a><span>|</span>
+          <a class="hover:text-[#672f3e]" href="trajetoria.html">Trajetória</a><span>|</span>
+          <a class="hover:text-[#672f3e]" href="cursos.html">Seminários e Cursos</a><span>|</span>
+          <a class="hover:text-[#672f3e]" href="projetos.html">Projetos e Transmissão</a><span>|</span>
+          <a class="hover:text-[#672f3e]" href="eventosrealizados.html">Eventos Realizados</a>
         </nav>
-        <button id="menuButton" class="rounded border border-black/15 px-3 py-2 text-sm text-[#22201d] md:hidden shrink-0" aria-expanded="false">Menu</button>
+        
+        <button id="menu-btn" class="block p-2 md:hidden" aria-label="Abrir menu">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
       </div>
-      <nav id="mobileMenu" class="hidden border-t border-black/10 bg-[#f4eee5] px-4 py-3 text-sm md:hidden">
-        <a class="block py-2" href="index.html">Home</a>
-        <a class="block py-2" href="trajetoria.html">Trajetória</a>
-        <a class="block py-2" href="cursos.html">Seminários e Cursos</a>
-        <a class="block py-2" href="projetos.html">Projetos e Transmissão</a>
+
+      <nav id="mobile-menu" class="hidden border-t border-black/5 bg-[#f4eee5] px-4 py-4 flex flex-col gap-3 text-sm font-medium md:hidden">
+        <a class="hover:text-[#672f3e] py-1" href="index.html">Home</a>
+        <a class="hover:text-[#672f3e] py-1" href="trajetoria.html">Trajetória</a>
+        <a class="hover:text-[#672f3e] py-1" href="cursos.html">Seminários e Cursos</a>
+        <a class="hover:text-[#672f3e] py-1" href="projetos.html">Projetos e Transmissão</a>
+        <a class="hover:text-[#672f3e]" href="eventosrealizados.html">Eventos Realizados</a>
       </nav>
     </header>
 
@@ -72,18 +79,11 @@
 
         <div class="mt-10 space-y-6 text-lg leading-8 text-ink/90 font-sans">
           <p class="d text-xl text-wine">
-           Em 2017 nasceu o Projeto Ponte, com psicanalistas voluntários, que visava “cuidar de quem cuida”, ou seja, oferecer apoio e conhecimento gratuitamente às pessoas que trabalham em entidades assistenciais. A professora do INPSI, Regina Medeiros, foi a coordenadora das equipes durante todo trabalho
+           Em 2017 nasceu o Projeto Ponte, com psicanalistas voluntários, que visava “cuidar de quem cuida”, ou seja, oferecer apoio e conhecimento gratuitamente às pessoas que trabalham em entidades assistenciais. Projeto Ponte homenageado na Câmara Municipal de Sorocaba pelo vereador Anselmo Rolim Neto e o INPSI: Aline Rodrigues, Elange Engel, Paulo Almeida, Carolina Souza, Rose Lima e Regina Medeiros.
           </p>
           <p class="d text-xl text-wine">
             Fizemos contato com entidades que abraçassem palestras para seus voluntários e assistidos, desenvolvendo atividades solicitadas. Também esteve no CDG da Pepsico/Sorocaba refletindo sobre suicídio e no Projeto Pescar da empresa Emerson, falando sobre “Sexualidade e Relações Afetivas”. O Projeto Ponte teve suas atividades encerradas com Lives no Instagram em 2020 durante a pandemia da Covid 19.
           </p>
-          <a href="https://www.facebook.com/inpsi.psicanalise" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              class="inline-flex items-center justify-center bg-blue-700 hover:bg-blue-800 text-white px-3 py-3 rounded border border-black/10 shadow-sm transition-colors text-center min-w-[200px]" 
-              aria-label="Facebook do INPSI">
-              Acesse o Facebook
-            </a>
         </div>
 
         <div class="mt-12 grid gap-6 sm:grid-cols-2">
